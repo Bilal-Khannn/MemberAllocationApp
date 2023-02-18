@@ -1,5 +1,5 @@
-import femaleProfile from "/home/bk/vscode-projects/project-01/src/images/femaleProfile.jpg";
-import maleProfile from "/home/bk/vscode-projects/project-01/src/images/maleProfile.jpg";
+import femaleProfile from "./femaleProfile.jpg";
+import maleProfile from "./maleProfile.jpg";
 
 function Employees({
   employees,
