@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function GroupedTeamMembers({ employees, seletedTeam, setTeam }) {
+function GroupedTeamMembers({ employees, selectedTeam, setTeam }) {
   const [groupedEmployees, setGroupedData] = useState(groupTeamMembers());
 
   function groupTeamMembers() {
@@ -13,7 +13,7 @@ function GroupedTeamMembers({ employees, seletedTeam, setTeam }) {
     var teamA = {
       team: "TeamA",
       members: teamAMembers,
-      collapsed: seletedTeam === "TeamA" ? false : true,
+      collapsed: selectedTeam === "TeamA" ? false : true,
     };
 
     teams.push(teamA);
@@ -24,8 +24,8 @@ function GroupedTeamMembers({ employees, seletedTeam, setTeam }) {
 
     var teamB = {
       team: "TeamB",
-      members: teamAMembers,
-      collapsed: seletedTeam === "TeamB" ? false : true,
+      members: teamBMembers,
+      collapsed: selectedTeam === "TeamB" ? false : true,
     };
 
     teams.push(teamB);
@@ -36,8 +36,8 @@ function GroupedTeamMembers({ employees, seletedTeam, setTeam }) {
 
     var teamC = {
       team: "TeamC",
-      members: teamAMembers,
-      collapsed: seletedTeam === "TeamC" ? false : true,
+      members: teamCMembers,
+      collapsed: selectedTeam === "TeamC" ? false : true,
     };
 
     teams.push(teamC);
@@ -49,7 +49,7 @@ function GroupedTeamMembers({ employees, seletedTeam, setTeam }) {
     var teamD = {
       team: "TeamD",
       members: teamDMembers,
-      collapsed: seletedTeam === "TeamD" ? false : true,
+      collapsed: selectedTeam === "TeamD" ? false : true,
     };
 
     teams.push(teamD);
